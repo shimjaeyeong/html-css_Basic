@@ -2,15 +2,43 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-
     </head>
     <body>
         <style>
+            * {
+                border-collapse: collapse;
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none;
+                color: black;
+                list-style: none;
+            }
+            div > span {
+                background: pink;
+                border:1px solid white;
+            }
+            .flexable{
+                display: flex;
+                margin-left: 100px;
+            }
+            div > div:first-child{
+                flex: 2;
+            }
+            div > div{
+                flex:1;
+                background: orange;
+                border:1px solid white;
+            }
 
         </style>
-
-        <a href="https://www.naver.com">네이버 바로가기</a>
-
-        <img src="img.jpg">
+        <div>
+            <span>span</span>
+            <span>span</span>
+        </div>
+        <div class="flexable">
+            <div>div</div>
+            <div>div</div>
+            <div>div</div>
+        </div>
     </body>
 </html>
