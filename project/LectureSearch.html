@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="searchStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/xxxxxxxxcxc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- 헤더 -->
+    <div class="header">
+        <div class="logo">바름</div>
+        <ul class="account">
+            <li class="my_lecture"><a href="#">내 강의</a></li>
+            <li><a href="#">로그인 / 회원가입</a></li>
+        </ul>
+    </div>
+    <div id="container" class="search_container"> <!-- 전체 페이지 뒷배경 색 넣기 위해 -->
+        <div id="content"> <!-- 전체 페이지 주요내용 -->
+            <div class="search_category"> <!-- 카테고리 -->
+                <div class="menu">
+                    <li>
+                        <a href="#">카테고리0</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리1</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리2</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리3</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리4</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리5</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리6</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리7</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카테고리8</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">submenu02</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <div class="search_print">
+                <div class="search_area"> <!-- 검색창 -->
+                    <div class="input_area"> <!-- 검색내용 -->
+                        <input type="search" placeholder="원하는 강좌를 찾아보세요. (강좌명, 교수자명 등)"
+                               onfocus="this.placeholder=''" onblur="this.placeholder='원하는 강좌를 찾아보세요. (강좌명, 교수자명 등)'">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="search_lecture_list_area"> <!-- 강의 컨탠츠 -->
+                    <div id="categoryTitle" class="search_lecture_list_title">
+                        <h2>카테고리 이름</h2>
+                    </div>
+                    <ul class="search_lecture_list">
+                        <div class="cards1">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image1.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image2.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image3.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards2">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image4.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image5.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image6.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards3">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image7.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image8.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image9.png">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards4">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image1.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image2.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image3.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards5">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image4.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image5.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image6.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards6">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image7.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image8.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image9.png">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards7">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image1.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image2.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image3.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="cards8">
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image7.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image8.jpg">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="lecture_card">
+                                    <span class="lecture_preview">
+                                        <img src="image/list_image9.png">
+                                    </span>
+                                    <dl class="lecture_info">
+                                        <dt>강의 제목: 여기는 강의 제목이 들어갈 자리입니다.</dt>
+                                        <dd class="detail">
+                                            <div class="date">
+                                                강의 수강 기간
+                                            </div>
+                                            <p class="name">
+                                                <span class="txt_lecturer">강사 이름</span>
+                                                <span class="txt_partner">교육 기관</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                    <div class="lecture_count">
+                                        <div class="favorite">
+                                            <img src="icon/icons8-favorite-24.png">
+                                            <span class="favorite_count">좋아요수</span>
+                                        </div>
+                                        <div class="student">
+                                            <img src="icon/icons8-account-24.png">
+                                            <span class="student_count">수강자수</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="search_more_area">
+                    <button type="button">더보기
+                        <span class="total_lecture_count">(24/000)</span>
+                    </button>
+                </div>
+                <a href="#" class="btn_top">TOP</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            LOGO
+        </div>
+        <div>
+            Made. 201645825 이 승 윤 & 201645819 심 재 영 & 201824444 김 유 미
+            <br>
+            Addr. 부산대학교 전기컴퓨터공학부 정보컴퓨터공학전공
+            <br>
+            Fax/Tel. 00 - 000 - 0000
+            <br>
+            COPYRIGHT 2022. Baleum. ALL RIGHT RESERVED.
+        </div>
+    </footer>
+</div>
+</body>
+</html>
